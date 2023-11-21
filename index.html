@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi portafolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="./img/Fotomia.png">
+    <link rel="icon" href="fa-solid fa-terminal" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css/style.css">
 </head>
 <body class="text-bg-dark">
     <header>
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Mi Portafolio</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +24,7 @@
                     <a class="nav-link" href="#">Sobre mi</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Aprendisajez</a>
+                    <a class="nav-link" href="#Aprendisajez">Aprendizajes</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Proyectos</a>
@@ -38,28 +38,30 @@
         </nav>
     </header>
     <main>
-        <section class="container contenedor1">
+        <section class="container contenedorInformacion ">
             <div class="row gap-4 gap-md-0">
                 <div class="col-md-4 d-flex aling-items-center justify-content-center swing-in-top-fwd">
                     <img class="fotoMia rounded" src="./img/Fotomia.png" alt="Jonathan Cruz">
                 </div>
-                <div class="col-md-8 informacion d-flex flex-column aling-items-center justify-content-center" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                <div class="col-md-8 informacionMia d-flex flex-column aling-items-center justify-content-center" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
                     <h6>crzmcfly</h6>
                     <h1 class="bienbenida">Jonathan Cruz</h1>
                     <h4>Desarrollador web</h4>
-                    <p class="parrafo">Nacido en el norte de México, precisamente en Puerto Peñasco, Sonora. Estudiante de Desarrollo Web mediante cursos vía online, aprovechando los miles de recursos que hay.
+                    <p class="parrafoMio">Nacido en el norte de México, precisamente en Puerto Peñasco, Sonora. Estudiante de Desarrollo Web mediante cursos vía online, aprovechando los miles de recursos que hay.
                     Aprendiendo cada día con el objetivo de algún día compartir mi conocimiento.</p>
                 </div>
             </div>
         </section>
-        <section>
-          <div>
-            <h2>Aprendizajez</h2>
-            <p>Desde el comienzo me enfoque en Front-End, aplicando las mejores herramientas que eh aprendido, reforzando los lenguajes con los diferentes Frameworks que existen.</p>
-            <div class="imagenesDeProg">
-              <img src="./img/logohtml.png" alt="Logo de HTML">
-              <img src="./img/logocss.png" alt="Logo de CSS">
-              <img src="./img/logobootstrap (2).png" alt="Logo Bootstrap">
+        <section id="Aprendisajez" class="contenedorAprendizajes" data-aos="flip-right"  data-aos-duration="2000">
+          <div class="contAprendizajes">
+            <div class="informacionAprendizajes">
+               <h2>Aprendizajez</h2>
+               <p>Desde el comienzo me enfoqué en Front-End, aplicando las mejores herramientas que he aprendido, reforzando los lenguajes con los diferentes Frameworks que existen.</p>
+            </div>
+            <div class="imgDeProg">
+              <img class="imgLeng" src="./img/logohtml.png" alt="Logo de HTML">
+              <img class="imgLeng"  src="./img/logocss.png" alt="Logo de CSS">
+              <img class="imgLeng"  src="./img/logobootstrap (2).png" alt="Logo Bootstrap">
             </div>
           </div>
         </section>
