@@ -18,7 +18,7 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="collapse  navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link" href="#">Sobre mi</a>
@@ -40,14 +40,14 @@
     <main>
         <section class="container contenedorInformacion ">
             <div class="row gap-4 gap-md-0">
-                <div class="col-md-4 d-flex aling-items-center justify-content-center swing-in-top-fwd">
-                    <img class="fotoMia rounded" src="./img/Fotomia.png" alt="Jonathan Cruz">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <img class="fotoMia" src="./img/Fotomia.png" alt="Jonathan Cruz">
                 </div>
-                <div class="col-md-8 informacionMia d-flex flex-column aling-items-center justify-content-center" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
-                    <h6>crzmcfly</h6>
-                    <h1 class="bienbenida">Jonathan Cruz</h1>
-                    <h4>Desarrollador web.</h4>
-                    <p class="parrafoMio">Nacido en el norte de México, precisamente en Puerto Peñasco, Sonora. Estudiante de Desarrollo Web mediante cursos vía online, aprovechando los miles de recursos que hay. 
+                <div class="col-md-8 informacionMia d-flex flex-column justify-content-center" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                    <h6 class="vibrate-1">crzmcfly</h6>
+                    <h1 class="bienvenida ">Jonathan Cruz</h1>
+                    <h4 class="text-focus-in">Desarrollador web.</h4>
+                    <p class="parrafoMio focus-in-expand-fwd">Nacido en el norte de México, precisamente en Puerto Peñasco, Sonora. Estudiante de Desarrollo Web mediante cursos vía online, aprovechando los miles de recursos que hay. 
                     Aprendiendo cada día con el objetivo de algún día compartir mi conocimiento.</p>
                 </div>
             </div>
@@ -71,12 +71,8 @@
             <p>Por el momento se encuentra vacio...</p>
           </div>
         </section>
-        <section id="contacto" class="contenedorContacto">
-          <div class="contactoLinks">
-            <div class="infoLinks">
-              <h2>Contacto</h2>
-              <p>Si gustas ponerte en contacto conmigo aqui te aparecen mis redes</p>
-            </div>
+        <footer id="contacto" class="contenedorContacto">
+          <div class="contactoLinks">      
             <div class="contenedorLinks">
              <ul class="listaLinks">
                 <li>
@@ -90,8 +86,11 @@
                   </li>
              </ul>
             </div>
+            <div class="infoLinks">
+              <h5>Copyright © 2023 | Hecho por <a class="linksContacto hechoPor" href="https://www.github.com/crzmcfly" target="_blank">Crzmcfly</a></h5>
+            </div>
           </div>
-        </section>
+        </footer>
     </main>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

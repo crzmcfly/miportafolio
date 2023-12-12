@@ -22,7 +22,9 @@
 
 .fotoMia{
     width: 200px;
+    filter: drop-shadow(10px 7px 10px rgb(0, 137, 228));
 }
+
 
 .imgLeng{
     width: 200px;
@@ -90,16 +92,13 @@
 }
 
 .contenedorContacto{
-    margin: auto;
-    margin-inline: 50px;
     padding: 20px;
     margin-top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(0, 137, 228, 0.4);
-    border-radius: 10% 10% 10% 10% / 40% 40% 40% 40%;
+    background-color: rgb(0, 137, 228);
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
@@ -108,20 +107,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.infoLinks{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contenedorLinks{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 100px;
 }
 
 .listaLinks{
@@ -138,8 +123,22 @@
 }
 
 .iconos:hover{
-    color: white;
+    color: whitesmoke;
+    font-size: 100px;
+    transition: .7s;
 }
+
+.hechoPor{
+    color: whitesmoke;
+}
+
+.hechoPor:hover{
+    text-decoration: none;
+    font-size: 30px;
+    transition: .7s;
+}
+
+
 
 @media (max-width: 575.98px){
     
@@ -179,16 +178,8 @@
     }    
 
     .contenedorContacto{
-        margin-inline: 20px;
         text-align: center;
     }
-
-    .contactolinks{
-        margin-inline: 20px; 
-        text-align: center;
-    }
-
-
 
 }
 
@@ -224,9 +215,7 @@
     }
 
     .contenedorContacto{
-        margin-inline: 20px;
         text-align: center;
-         
     }
 
 
@@ -239,6 +228,14 @@
 
 /**animista**/
 
-.swing-in-top-fwd{-webkit-animation:swing-in-top-fwd .5s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-fwd .5s cubic-bezier(.175,.885,.32,1.275) both}
+.swirl-in-bck{animation:swirl-in-bck .65s ease-out both}
+@keyframes swirl-in-bck{0%{transform:rotate(540deg) scale(5);opacity:0}100%{transform:rotate(0) scale(1);opacity:1}}
 
- @-webkit-keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
+.text-focus-in{animation:text-focus-in 1.5s cubic-bezier(.55,.085,.68,.53) both}
+@keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+
+.focus-in-expand-fwd{animation:focus-in-expand-fwd 2.8s cubic-bezier(.25,.46,.45,.94) both}
+@keyframes focus-in-expand-fwd{0%{letter-spacing:-.5em;transform:translateZ(-800px);filter:blur(12px);opacity:0}100%{transform:translateZ(0);filter:blur(0);opacity:1}}
+
+.vibrate-1{animation:vibrate-1 1.5s linear infinite both}
+@keyframes vibrate-1{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}
