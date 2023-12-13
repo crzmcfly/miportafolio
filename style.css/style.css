@@ -30,6 +30,11 @@
     width: 200px;
 }
 
+.imgLeng:hover{
+    transform: rotate(1turn);
+    transition: 0.9s;
+}
+
 .contenedorInformacion{
     margin-top: 200px;
 }
@@ -103,13 +108,37 @@
 }
 
 .contactolinks{
+    margin: 30px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.contenedorLinks{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linksParrafo{
+    font-size: 20px;
+}
+
 .listaLinks{
+    margin: 10px;
+}
+
+.infoLinks{
+    margin: 20px;
+    padding: 5px;
+}
+
+.listaLinks{
+    margin: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -124,7 +153,6 @@
 
 .iconos:hover{
     color: whitesmoke;
-    font-size: 100px;
     transition: .7s;
 }
 
@@ -134,8 +162,10 @@
 
 .hechoPor:hover{
     text-decoration: none;
-    font-size: 30px;
+    color: gold;
+    font-size: 25px;
     transition: .7s;
+    text-decoration: none;
 }
 
 
@@ -238,4 +268,5 @@
 @keyframes focus-in-expand-fwd{0%{letter-spacing:-.5em;transform:translateZ(-800px);filter:blur(12px);opacity:0}100%{transform:translateZ(0);filter:blur(0);opacity:1}}
 
 .vibrate-1{animation:vibrate-1 1.5s linear infinite both}
+.vibrate-2{animation:vibrate-1 5.5s linear infinite both}
 @keyframes vibrate-1{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}
